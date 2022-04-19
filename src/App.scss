@@ -1,15 +1,30 @@
+@import "./assets/variables.scss";
+
+
 * {
   margin: 0;
   padding: 0
 }
 body {
-  min-height: 100vh;
- }
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;    
+  color: $primaryTextColor
+}
 
 .appContainer {
   background-color: #FBFBFB;
   -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.2); 
   box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.2);
-  width: calc(100vw - 10rem);
+  width: calc(100vw - 30rem);
   margin: 2rem auto;
+}
+.outerWrapper {
+  display: flex;
+}
+.innerWrapper {
+  justify-self: center;
+  display: flex;
+  padding: 2rem;
+  margin: 0 auto;
+
 }

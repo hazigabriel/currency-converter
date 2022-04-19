@@ -1,0 +1,47 @@
+@import "../../assets/variables.scss";
+
+// <div className="innerWrapper suggestionsInnerWrapper">
+//         <div className="suggestionsRow">
+//           <div className="suggestionButton">
+.suggestionsInnerWrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  h3 {
+    margin: 2rem 11rem;
+ 
+  }
+  .suggestionsRow {
+    display: flex;
+    flex-direction: row;
+    margin: 1rem;
+    .suggestionButton {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;;
+      cursor: pointer;
+      font-size: 0.8em;
+      width: 10rem;
+      margin: 0 10rem;
+      padding: 0.5rem;
+      -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3); 
+      box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
+      transition: 300ms ease;
+      background-color: #f4f4f4;
+      p {
+        font-size: 1.4rem;
+        transition: 300ms ease;
+        transform: translateX(-0.5rem)
+      }
+      &:hover {
+        -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5); 
+        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+        background-color: #ececec;
+        color: $accentTextColor;
+        p {
+          transform: translateX(0)
+        }
+      }
+    }
+  }
+}
